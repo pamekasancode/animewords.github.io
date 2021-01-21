@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.topbar {
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.topbar i {
+  float: right;
+  font-size: 30px;
+  transition: .3s;
+}
+
+.topbar i:hover {
+  transform: scale(0.9);
+  color: #01B7FF;
+  
+}
+
+.search {
+  width: 100%;
+  z-index: 999;
+  margin-top: 60px;
+  height: 50px;
+  animation: searching 500ms;
+}
+
+.search input {
+  outline: none;
+}
+
+.search input:hover {
+  box-shadow: none;
+  border-color: #d4d4d4;
+}
+
+@keyframes searching {
+  0%{width: 0;}
+  100%{width: 100%;}
+}
+
+.main {
+  padding-top: 10px;
+}
+
+.main p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.main #source {
+  font-size: 13px;
+  color: #888;
+}
+
+.main #anime {
+  color: #01B7FF;
+  margin-top: -17px;
+  font-size: 13px;
+}
+
+.main .list-group {
+  border-radius: 0;
+}
+
+.main .list-group-item {
+  margin-bottom: 15px;
+  border: none;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px #e3e3e3;
+}
+
+.floating-button {
+  width: 40px;
+  height: 60px; 
+  background-color: #01B7FF;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 25px;
+  display: none;
+}
+
+.floating-button i {
+  margin-top: 15px;
+}
+
+.floating-button.active {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer h5 {
+  font-size: 17px;
+  color: #888;
+}
